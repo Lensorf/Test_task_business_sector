@@ -1,0 +1,30 @@
+.Pagination {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page-link {
+    color: #474955;
+    font-family: Roboto;
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1232 - 320)));
+    font-style: italic;
+    font-weight: 700;
+    line-height: 137.687%;
+    margin: calc(3px + (5 - 3) * ((100vw - 320px) / (1232 - 320)));
+}
+
+.buttonPagination {
+    color: #474955;
+    font-family: Roboto;
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1232 - 320)));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.687%;
+    text-decoration: none;
+}
+
+.paginationNumber {
+    display: flex;
+}

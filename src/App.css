@@ -1,0 +1,80 @@
+.BlockTable {
+    width: calc(320px + (1232 - 320) * ((100vw - 320px) / (1232 - 320)));
+    height: 820px;
+    margin: 5px calc(3px + (5 - 3) * ((100vw - 320px) / (1232 - 320)));
+}
+
+.table {
+    width: calc(320px + (1077 - 320) * ((100vw - 320px) / (1232 - 320)));
+    height: 54px;
+    flex-shrink: 0;
+    margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1232 - 320)));
+}
+
+#thead {
+    background-color: #474955;
+    --bs-table-bg: none;
+}
+
+#textThead {
+    color: white;   
+}
+
+.blockButton {
+    display: flex;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1232 - 320)));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.687%;
+}
+
+.buttonSort {
+    outline: none;
+    border: 0;
+    background: transparent;
+    padding-left: calc(20px + (40 - 20) * ((100vw - 320px) / (1232 - 320)));
+}
+
+.buttonPagination {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.PaginationBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(320px + (1077 - 320) * ((100vw - 320px) / (1232 - 320)));
+    height: calc(30px + (54 - 30) * ((100vw - 320px) / (1232 - 320)));
+    flex-shrink: 0;
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1232 - 320)));
+    margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1232 - 320)));
+}
+
+.postId {
+    text-align: center;
+    width: calc(50px + (110 - 50) * ((100vw - 320px) / (1232 - 320)));
+}
+
+.postTitle {
+    width: calc(264px + (529 - 264) * ((100vw - 320px) / (1232 - 320)));
+}
+
+.postBody {
+    width: calc(216px + (432 - 216) * ((100vw - 320px) / (1232 - 320)));
+}
+
+td {
+    color: #474955;
+    font-family: Roboto;
+    font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (1232 - 320)));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.687%;
+    border: 1px solid #E3E6EC;
+}
+
