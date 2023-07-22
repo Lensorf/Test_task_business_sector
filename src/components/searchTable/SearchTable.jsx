@@ -23,9 +23,14 @@ export default function searchTable({ posts, currentPage }) {
     }
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_POSTS', payload: filtredPosts });
+  };
+
   return (
     <div>
-      <form className="formSearch" role="search" onSubmit={(e) => e.preventDefault()}>
+      <form className="formSearch" role="search" onSubmit={(e) => handleSubmit(e)}>
         <input className="searchInput" type="search" placeholder="Поиск" aria-label="Search" onChange={(event) => setInput(event.target.value)} />
         {/* <Link className="buttonLink" type="button" to={currentPage} onClick={() => dispatch({ type: 'SET_POSTS', payload: filtredPosts })}>Search</Link> */}
         <Link className="buttonLink" type="button" to={currentPage} onClick={() => dispatch({ type: 'SET_POSTS', payload: filtredPosts })}><img className="buttonLink" src="search-svgrepo-com_1.svg" alt="scope" /></Link>
